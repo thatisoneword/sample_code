@@ -1,0 +1,12 @@
+.label_for_ie {
+    display:block;
+    margin-left: 12px;
+    color:#666;
+    font-size: .9rem;
+}
+#state_item {
+    width: 82px;
+    height:43px;
+    margin-top:15px;
+}
+#unit_item .label_for_ie { margin-left: 0; }

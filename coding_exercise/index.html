@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Zillow Code Exercise</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="address.js"></script>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="ie9_and_below.css" />
+    <![endif]-->
+
+    <!--viewport for mobile devices -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+</head>
+<body>
+
+<div id="outer_address" class="clearfix">
+    <div class="instructions">
+        Enter the address you would like to validate,<br>
+        "<span class="required">*</span>" indicates the information that is required.
+    </div>
+    <form id="address_form">
+        <div class="input_item fl">
+            <div class="label_for_ie">House number</div>
+            <span class="required abs">*</span>
+            <input type="text" name="house_number" class="validate_house_number" placeholder="House number">
+        </div>
+
+        <div id="street_item" class="input_item fl">
+            <div class="label_for_ie">Street</div>
+            <span class="required abs">*</span>
+            <input type="text" name="street" class="validate_street" placeholder="Street">
+        </div>
+
+        <div id="unit_item" class="input_item fl small">
+            <div class="label_for_ie">Unit #</div>
+            <input type="text" name="unit" class="validate_unit" placeholder="Unit #">
+        </div>
+
+        <div class="input_item fl">
+            <div class="label_for_ie">City</div>
+            <span class="required abs">*</span>
+            <input type="text" name="city" class="validate_city" placeholder="City">
+        </div>
+
+        <div id="state_item" class="input_item fl small clearfix">
+            <div class="arrow-down"></div>
+            <span class="required abs">*</span>
+            <select name="state" class="validate_state" size="1">
+                <option value="">State</option>
+                <option value="AK">AK</option>
+                <option value="AL">AL</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VA">VA</option>
+                <option value="VT">VT</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+            </select>
+        </div>
+
+        <div id="zip_item" class="input_item fl">
+            <div class="label_for_ie">Zip Code</div>
+            <span class="required abs">*</span>
+            <input type="text" name="zip" class="validate_zip" placeholder="Zip Code">
+        </div>
+
+        <div id="error_box" class="clear error"></div>
+        <input type="submit" name="add_address" id="add_address_btn" class="btn fr clear" value="Add Address">
+        <div id="status_message" class="fr"></div>
+    </form>
+    <div id="saved" class="clearfix clear"></div>
+</div>
+
+<script>
+    //Let's wait for jQuery to load
+    $(function(){ address.init(); });
+</script>
+
+</body>
+</html>

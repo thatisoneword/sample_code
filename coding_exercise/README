@@ -1,0 +1,46 @@
+Requirments for this coding exercise:
+
+Create your most user­friendly form using HTML and Javascript that allows a user to input a US street address.
+Requirements
+
+1. The form should accept house number, street, city, state and zip code. Optionally, the form should
+accept a unit number. Your current home address is a great example of a potential input (but make sure
+to test with a variety).
+
+2. Make sure the form functions properly on all major desktop browsers (tell us what minimum version of
+IE you’re choosing to support)
+
+3. Provide some basic level of validation with user­friendly error messages
+Optional
+
+4. Use core JQuery library
+
+5. Use Google Maps (or any 3rd party service) to assist with validation & feedback
+Beware
+
+6. Don’t use any Javascript plugins outside of core JQuery
+
+7. Don’t copy someone else’s solution... we’re good at googling and searching Github too.
+Bonus Points
+
+8. Make sure the form works properly on tablets and phones (if you end up supporting specific devices or
+operating systems, just let us know which ones)
+
+9. Make your code beautiful... we love developers who obsess over clarity and consistency.
+
+
+Additional Usability Features:
+
+1. The address entered is checked against previous entries to prevent duplication.
+
+2. Addresses that have been validated are displayed below the form.
+
+3. The user is notified when an address has been added or if an address is a duplicate.
+
+4. White space is trimmed from inputs that the user may not have noticed.
+
+5. To prevent double submissions, the submit button is disabled while validation is being done.
+
+6. For a cleaner look, placeholder text was used and the labels hidden. The labels only appear for older versions of IE that do not support placeholder text.
+
+7. The form was built with Responsive Web Design techniques so it would look as good as possible at different browser sizes. 
